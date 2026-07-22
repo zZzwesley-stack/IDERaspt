@@ -6,6 +6,13 @@
 ![Made With](https://img.shields.io/badge/Made%20With-wesley-CC342D?style=for-the-badge&logo=ruby&logoColor=white)
 ![Compiler](https://img.shields.io/badge/Compiler-RastPt-8A2BE2?style=for-the-badge)
 ![Open Source](https://img.shields.io/badge/Open%20Source-Yes-success?style=for-the-badge)
+[![GitHub](https://img.shields.io/badge/GitHub-Repositório-181717?style=for-the-badge&logo=github)](https://github.com/SEU_USUARIO/RastPt)
+
+[![Releases](https://img.shields.io/badge/Releases-Ver%20Versões-blue?style=for-the-badge)](https://github.com/SEU_USUARIO/RastPt/releases)
+
+[![Issues](https://img.shields.io/badge/Issues-Reportar%20Bug-red?style=for-the-badge)](https://github.com/zZzwesley-stack/RastPt/issues)
+
+
 `pode conter vários erros ai!
 Me desculpa se está bugado, pois ainda
 é versão 1.5 ainda, alpha.`
