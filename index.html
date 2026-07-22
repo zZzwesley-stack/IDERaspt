@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>RastPt IDE v1.5 - PC & Mobile</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <!-- BARRA LATERAL ESQUERDA (TOPBAR NO MOBILE) -->
+    <aside class="activity-bar">
+      <div class="logo-brand" title="RastPt IDE v1.5">R</div>
+      <button class="nav-btn active" id="btn-toggle-explorer" title="Alternar Explorador">📁</button>
+      <button class="nav-btn btn-executar-highlight" id="btn-executar-top" title="Executar Código (F5)">▶</button>
+    </aside>
+
+    <!-- PAINEL EXPLORADOR DE ARQUIVOS -->
+    <section class="sidebar-panel" id="sidebar-panel">
+      <div class="panel-header">
+        <h2>EXPLORADOR</h2>
+        <div class="action-icons">
+          <button id="btn-new-file" title="Novo Arquivo">+</button>
+          <button id="btn-new-folder" title="Nova Pasta">📁+</button>
+          <button id="btn-upload-file" title="Upload de Arquivo">⬆</button>
+        </div>
+      </div>
+      <input type="file" id="file-uploader" style="display:none;" accept=".rast" />
+      <div class="file-tree" id="file-tree"></div>
+    </section>
+
+    <!-- ÁREA PRINCIPAL DO EDITOR E PAINÉIS -->
+    <main class="main-editor-area">
+      <!-- BARRA DE ABAS -->
+      <div class="tab-bar" id="tab-bar"></div>
+
+      <!-- BARRA DE FERRAMENTAS DO EDITOR -->
+      <div class="editor-toolbar">
+        <span class="breadcrumb" id="active-filepath">projeto / principal.rast</span>
+        <div class="toolbar-actions">
+          <button class="btn-tool" id="btn-save" title="Salvar">💾 Salvar</button>
+          <button class="btn-tool" id="btn-download" title="Baixar">⬇ Baixar</button>
+          <button class="btn-tool" id="btn-search" title="Pesquisar">🔍 Pesquisar</button>
+          <button class="btn-run-code" id="btn-executar">▶ Executar</button>
+        </div>
+      </div>
+
+      <!-- PAINEL DE PESQUISA / SUBSTITUIR -->
+      <div class="search-panel hidden" id="search-panel">
+        <input type="text" id="search-input" placeholder="Pesquisar..." />
+        <input type="text" id="replace-input" placeholder="Substituir por..." />
+        <div class="search-panel-buttons">
+          <button id="btn-replace-all">Substituir Tudo</button>
+          <button id="btn-close-search">❌</button>
+        </div>
+      </div>
+
+      <!-- EDITOR DE CÓDIGO -->
+      <div class="code-container">
+        <div class="line-numbers" id="line-numbers">1</div>
+        <div class="editor-wrapper">
+          <div class="syntax-highlights" id="syntax-highlights"></div>
+          <textarea id="code-editor" spellcheck="false" autocomplete="off" wrap="off"></textarea>
+        </div>
+      </div>
+
+      <!-- PAINEL INFERIOR: CONSOLE E TERMINAL -->
+      <section class="bottom-panel">
+        <div class="panel-tabs">
+          <button class="panel-tab active" id="tab-btn-console">Console</button>
+          <button class="panel-tab" id="tab-btn-terminal">Terminal</button>
+          <button class="btn-clear-console" id="btn-clear-console" title="Limpar Console">🗑 Limpar</button>
+        </div>
+        
+        <!-- SAÍDA DO CONSOLE -->
+        <div class="panel-content active" id="console-log">
+          <div class="system-msg">RastPt IDE v1.5 Pronta. Clique em "Executar" para rodar seu código.</div>
+        </div>
+
+        <!-- TERMINAL INTERATIVO -->
+        <div class="panel-content hidden" id="terminal-log">
+          <div class="system-msg">Terminal RastPt v1.5:</div>
+          <div id="terminal-history"></div>
+          <div class="terminal-input-row">
+            <span class="prompt-symbol">&gt;</span>
+            <input type="text" id="terminal-input" placeholder="Digite uma instrução..." />
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- BIBLIOTECAS E MÓDULOS -->
+  <script src="src/core/Brasil.js"></script>
+  <script src="src/core/Matematica.js"></script>
+  <script src="src/core/Sistema.js"></script>
+  <script src="src/core/interpreter.js"></script>
+  <script src="src/ui/editor.js"></script>
+  <script src="src/ui/ui.js"></script>
+  <script src="src/ui/app.js"></script>
+</body>
+</html>
