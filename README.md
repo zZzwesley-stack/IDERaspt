@@ -7,9 +7,7 @@
 ![Compiler](https://img.shields.io/badge/Compiler-RastPt-8A2BE2?style=for-the-badge)
 ![Open Source](https://img.shields.io/badge/Open%20Source-Yes-success?style=for-the-badge)
 [![GitHub](https://img.shields.io/badge/GitHub-Repositório-181717?style=for-the-badge&logo=github)](https://github.com/zZzwesley-stack/RastPt)
-
 [![Releases](https://img.shields.io/badge/Releases-Ver%20Versões-blue?style=for-the-badge)](https://github.com/zZzwesley-stack/RastPt/releases)
-
 [![Issues](https://img.shields.io/badge/Issues-Reportar%20Bug-red?style=for-the-badge)](https://github.com/zZzwesley-stack/RastPt/issues)
 
 
