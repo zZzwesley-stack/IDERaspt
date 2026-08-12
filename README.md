@@ -11,6 +11,7 @@
 [![Issues](https://img.shields.io/badge/Issues-Reportar%20Bug-red?style=for-the-badge)](https://github.com/zZzwesley-stack/RastPt/issues)
 
 
-`pode conter vários erros ai!
-Me desculpa se está bugado, pois ainda
-é versão 1.5 ainda, alpha.`
+`pode conter vários erros ai!`
+
+`Me desculpa se está bugado, pois ainda
+é versão 1.5, alpha.`
